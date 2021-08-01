@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        "use strict;"
+        //Первое задание
+        let Tc = +prompt('Введите температуру в градусах по Цельсию:')
+        let Tf = (9 / 5) * Tc + 32;
+        alert("Температура " + Tc + "градусов(а) Цельсия соответствует " + Tf + "градусам(ов) по Фарингейту")
+            //Второе задание
+        let name = "Василий";
+        let admin = name;
+        console.log(admin);
+        //Третье задание
+        /*1. сложение первых двух чисел 10 и 10, результат 20
+          2. к 20 прибавляется строка "10" (конкатенация), результат 2010
+        */
+       let firstResult=(10 + 10 + "10");
+       console.log(firstResult);
+       /*1. сложение числа 10 и строки "10" (конкатенация), результат 1010
+         2. к строке 1010 прибавляем число 10 (конкатенация), результат 101010
+       */
+       let secondResult=(10 + "10" + 10);
+        console.log(secondResult);
+        /*1.сложение первых двух чисел 10 и 10, результат 20
+          2.сложение числа 20 и пустого значения строки 0, результат 20
+          3.унарный плюс преобразует строку 10 в число 10, идет сложение 20 и 10, результат 30
+        */
+       let thirdResult=(10 + 10 + +"10");
+        console.log(thirdResult);
+        /*1. унарный минус преобразует пустое строковое значение в -0
+         2. деление 10 на -0 дает результат -infinity
+        */
+        let fourthResult=(10 / -"");
+         console.log(fourthResult);
+       /*1. Унарный плюс переводит строковое значение "2,5" в число
+         2. из-за запятой вместо точки число 2,5 становится NaN
+         3. Деление числа 10 на NaN даст результат NaN */
+        let fifthResult=(10 / +"2,5");
+         console.log(fifthResult);
+    </script>
+</body>
+
+</html>
