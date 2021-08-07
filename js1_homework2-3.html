@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        "use strict";
+        //Третье задание
+        let a = +(prompt("Введите число a"));
+        let b = +(prompt("Введите число b"));
+        let razn;
+        let mult;
+        let sum;
+        if (a >= 0 && b >= 0) {
+            razn = a - b;
+            alert(`Введены два положительных числа. Их разность равна ${razn}`);
+        } else if (a < 0 && b < 0) {
+            mult = a * b;
+            alert(`Введены два отрицательных числа. Их произведение равно ${mult}`);
+        } else if (a >= 0 && b < 0 || b >= 0 && a < 0) {
+            sum = a + b;
+            alert(`Введены положительное и отрицательное числа. Их сумма равна ${sum}`);
+        }
+    </script>
+</body>
+
+</html>
