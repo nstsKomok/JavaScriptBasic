@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        "use strict";
+        //Четвертое задание
+        /**
+         * Функция определяет сумму двух чисел
+         * @param {number} sum1 первое число
+         * @param {number} sum2 второе число
+         * @returns {number} сумма чисел
+         * */
+        function sum(sum1, sum2) {
+            return sum1 + sum2;
+        }
+        let rezultSum = sum(+prompt('Введите первое слагаемое'), +prompt('Введите второе слагаемое'));
+        alert(`Сумма чисел равна ${rezultSum}`);
+        /**
+         * Функция определяет разность двух чисел
+         * @param {number} diff1 первое число
+         * @param {number} diff2 второе число
+         * @returns {number} разность чисел
+         * */
+        function diff(diff1, diff2) {
+            return diff1 - diff2;
+        }
+        let rezultDiff = diff(+prompt('Введите уменьшаемое'), +prompt('Введите вычитаемое'));
+        alert(`Разность чисел равна ${rezultDiff}`);
+        /**
+         * Функция определяет произведение двух чисел
+         * @param {number} mult1 первое число
+         * @param {number} mult2 второе число
+         * @returns {number} разность чисел
+         * */
+        function mult(mult1, mult2) {
+            return mult1 * mult2;
+        }
+        let rezultMult = mult(+prompt('Введите первый множитель'), +prompt('Введите второй множитель'));
+        alert(`Произведение чисел равно ${rezultMult}`);
+        /**
+         * Функция деления двух чисел
+         * @param {number} div1 первое число
+         * @param {number} div2 второе число
+         * @returns {number} разность чисел
+         * */
+        function div(div1, div2) {
+            return div1 / div2;
+        }
+        let rezultDiv = div(+prompt('Введите делимое'), +prompt('Введите делитель'));
+        alert(`Результат деления чисел равен ${rezultDiv}`);
+    </script>
+</body>
+
+</html>

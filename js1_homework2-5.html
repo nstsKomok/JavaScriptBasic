@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        "use strict";
+        //Пятое задание
+        /**
+        //  * Функция выполняет указанную математическую операцию
+        //  * @param {number} arg1 первое число
+        //  * @param {number} arg2 второе число
+        //  * @param {string} operation название операции
+        //  * @returns {number} результат выполнения операции
+        //  * */
+        function mathOperation(arg1, arg2, operation){
+            let rezult;
+            switch(operation){
+                case "+":
+                    rezult=sum(arg1, arg2);
+                    alert
+                    break;
+                case "-":
+                    rezult=diff(arg1, arg2);
+                    break;
+                case "*":
+                    rezult=mult(arg1, arg2);
+                    break;    
+                case "/":
+                    rezult=div(arg1, arg2);
+                    break;
+            }
+            return rezult;
+        
+        }
+        mathOperation(+prompt('Введите первое число'), +prompt('Введите второе число'), prompt('Введите требуемую операцию'));
+        /**
+         * Функция определяет сумму двух чисел
+         * @param {number} arg1 первое число
+         * @param {number} arg2 второе число
+         * @returns {number} сумма чисел
+         * */
+            function sum(arg1,arg2) {
+            let rezultSum=arg1+arg2;
+            alert(`Сумма чисел равна ${rezultSum}`);
+            return rezultSum;
+        }
+        // 
+        // 
+        // /**
+        //  * Функция определяет разность двух чисел
+        //  * @param {number} arg1 первое число
+        //  * @param {number} arg2 второе число
+        //  * @returns {number} разность чисел
+        //  * */
+            function diff(arg1,arg2) {
+            let rezultDiff = arg1 - arg2;
+            alert(`Разность чисел равна ${rezultDiff}`);
+            return rezultDiff;
+        }
+        // /**
+        //  * Функция определяет произведение двух чисел
+        //  * @param {number} arg1 первое число
+        //  * @param {number} arg2 второе число
+        //  * @returns {number} разность чисел
+        //  * */
+            function mult(arg1, arg2) {
+            let rezultMult=arg1 * arg2;
+            alert(`Произведение чисел равно ${rezultMult}`);
+            return rezultMult;
+         } 
+        // /**
+        //  * Функция деления двух чисел
+        //  * @param {number} arg1 первое число
+        //  * @param {number} arg2 второе число
+        //  * @returns {number} разность чисел
+        //  * */
+            function div(arg1, arg2) {
+            let rezultDiv=arg1 / arg2;
+            alert(`Результат деления чисел равен ${rezultDiv}`);
+            return(rezultDiv);
+        }
+        
+        
+        
+
+    </script>
+</body>
+
+</html>
